@@ -1,0 +1,22 @@
+POST http://localhost:4004/armario-snape-srv/Proveedores HTTP/1.1
+Content-Type: application/json
+
+{ "nombre":"Los más finos productos de limpieza de Madame Glossy S.R.L.", "puntuacion": 4 }
+
+###
+POST http://localhost:4004/armario-snape-srv/Pociones HTTP/1.1
+Content-Type: application/json;IEEE754Compatible=true
+
+{ "peso_cantidad": "1", "peso_unidad":"L", "nombre":"Abrillantador para zapatos autopulibles de Madame Glossy", "referencia":"37774LLK9", "proveedor_ID":"33aa19c2-d337-4bb3-9fcf-16278949958a"}
+
+###
+POST  http://localhost:4004/armario-snape-srv/Reviews HTTP/1.1
+Content-Type: application/json
+
+{ "puntuacion": 4, "objeto": "8df7e852-f211-49a1-bc88-87be4d83d5ca" }
+
+###
+GET http://localhost:4004/armario-snape-srv/Pociones HTTP/1.1
+
+###
+GET http://localhost:4004/armario-snape-srv/Proveedores HTTP/1.1
